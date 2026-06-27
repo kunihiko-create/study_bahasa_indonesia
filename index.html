@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>インドネシア語単語カード</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Bahasa Indonesia</p>
+          <h1 id="page-title">単語カード</h1>
+        </div>
+        <div class="stats" aria-label="学習状況">
+          <div>
+            <span id="stat-total">0</span>
+            <small>表示中</small>
+          </div>
+          <div>
+            <span id="stat-known">0</span>
+            <small>覚えた</small>
+          </div>
+          <div>
+            <span id="stat-hard">0</span>
+            <small>苦手</small>
+          </div>
+        </div>
+      </header>
+
+      <nav class="mode-switch" aria-label="学習モード">
+        <div class="mode-tabs" id="mode-tabs" role="tablist">
+          <button class="mode-tab active" data-mode="words" type="button">単語</button>
+          <button class="mode-tab" data-mode="grammar" type="button">文法</button>
+          <button class="mode-tab" data-mode="phrases" type="button">定型文</button>
+        </div>
+      </nav>
+
+      <section class="toolbar" aria-label="単語フィルター">
+        <div class="level-tabs" id="level-tabs" role="tablist" aria-label="級">
+          <button class="level-tab active" data-level="all" type="button">全級</button>
+          <button class="level-tab" data-level="E" type="button">E</button>
+          <button class="level-tab" data-level="D" type="button">D</button>
+          <button class="level-tab" data-level="C" type="button">C</button>
+          <button class="level-tab" data-level="B" type="button">B</button>
+          <button class="level-tab" data-level="A" type="button">A</button>
+        </div>
+
+        <label class="field">
+          <span>状態</span>
+          <select id="status-filter">
+            <option value="all">すべて</option>
+            <option value="new">未習得</option>
+            <option value="hard">苦手</option>
+            <option value="known">覚えた</option>
+          </select>
+        </label>
+
+        <label class="field" id="category-field">
+          <span>品詞</span>
+          <select id="category-filter">
+            <option value="all">すべて</option>
+          </select>
+        </label>
+
+        <label class="search-field">
+          <span>検索</span>
+          <input id="search-input" type="search" autocomplete="off" />
+        </label>
+      </section>
+
+      <section class="study-layout">
+        <section class="study-main" aria-label="フラッシュカード">
+          <div class="card-meta">
+            <span id="card-position">0 / 0</span>
+            <span id="card-level">E級</span>
+          </div>
+
+          <div class="card-actions">
+            <button id="prev-card" class="icon-button" type="button" aria-label="前のカード">←</button>
+            <button id="flip-card" class="primary-button" type="button">裏を見る</button>
+            <button id="next-card" class="icon-button" type="button" aria-label="次のカード">→</button>
+          </div>
+
+          <div class="review-actions">
+            <button id="mark-hard" class="review-button hard" type="button">苦手</button>
+            <button id="mark-known" class="review-button known" type="button">覚えた</button>
+            <button id="shuffle-card" class="review-button neutral" type="button">シャッフル</button>
+          </div>
+
+          <article class="flashcard" id="flashcard" tabindex="0" aria-live="polite"></article>
+        </section>
+
+        <aside class="word-list-panel" aria-label="単語一覧">
+          <div class="list-header">
+            <h2 id="list-title">単語一覧</h2>
+            <button id="reset-progress" class="text-button" type="button">記録を消す</button>
+          </div>
+          <div id="word-list" class="word-list"></div>
+        </aside>
+      </section>
+
+      <section class="target-band" aria-label="合格目標">
+        <div class="section-head">
+          <p class="eyebrow">Targets</p>
+          <h2>合格目標</h2>
+        </div>
+        <div id="target-grid" class="target-grid"></div>
+        <p class="source-note">語数はアプリ内の学習目安。正答数は公式の設問数と合格基準から計算。</p>
+      </section>
+
+      <section class="grammar-band" aria-label="文法メモ">
+        <div class="section-head">
+          <p class="eyebrow">Grammar</p>
+          <h2 id="grammar-title">文法</h2>
+          <p id="grammar-count" class="source-note"></p>
+        </div>
+        <div id="grammar-grid" class="grammar-grid"></div>
+      </section>
+    </main>
+
+    <script defer src="./data.js"></script>
+    <script defer src="./data-e-extra.js"></script>
+    <script defer src="./data-d-extra.js"></script>
+    <script defer src="./data-c-extra.js"></script>
+    <script defer src="./data-b-extra.js"></script>
+    <script defer src="./data-a-extra.js"></script>
+    <script defer src="./data-grammar-e.js"></script>
+    <script defer src="./data-grammar-d.js"></script>
+    <script defer src="./data-grammar-c.js"></script>
+    <script defer src="./data-grammar-b.js"></script>
+    <script defer src="./data-grammar-a.js"></script>
+    <script defer src="./data-phrases.js"></script>
+    <script defer src="./app.js"></script>
+  </body>
+</html>
