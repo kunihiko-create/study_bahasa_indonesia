@@ -526,7 +526,12 @@ function renderWordList() {
       `;
     }
 
-    button.addEventListener("click", () => {
+    button.addEventListener("mousedown", (event) => {
+      event.preventDefault();
+    });
+
+    button.addEventListener("click", (event) => {
+      event.preventDefault();
       const listScrollTop = wordList.scrollTop;
       const pageScrollX = window.scrollX || window.pageXOffset || 0;
       const pageScrollY = window.scrollY || window.pageYOffset || 0;
@@ -536,6 +541,11 @@ function renderWordList() {
       syncListSelection();
       wordList.scrollTop = listScrollTop;
       window.scrollTo(pageScrollX, pageScrollY);
+      button.blur();
+      requestAnimationFrame(() => {
+        wordList.scrollTop = listScrollTop;
+        window.scrollTo(pageScrollX, pageScrollY);
+      });
     });
     wordList.appendChild(button);
   });

@@ -171,7 +171,7 @@ body.is-phrases-mode .toolbar {
 .icon-button,
 .word-list-item {
   cursor: pointer;
-  transition: background 160ms ease, color 160ms ease, border-color 160ms ease, transform 160ms ease;
+  transition: background 160ms ease, color 160ms ease, border-color 160ms ease;
 }
 
 .mode-tab,
@@ -559,21 +559,20 @@ body.is-phrases-mode .toolbar {
 }
 
 .word-list {
-  display: grid;
-  align-content: start;
-  gap: 8px;
+  display: block;
   overflow: auto;
   padding-right: 4px;
 }
 
 .word-list-item {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 34px;
+  gap: 12px;
   align-items: flex-start;
   width: 100%;
   min-height: 58px;
   padding: 12px;
+  overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fff;
@@ -581,8 +580,13 @@ body.is-phrases-mode .toolbar {
   text-align: left;
 }
 
+.word-list-item + .word-list-item {
+  margin-top: 8px;
+}
+
 .word-list-item span {
   min-width: 0;
+  max-width: 100%;
 }
 
 .word-list-item.active {
@@ -592,23 +596,26 @@ body.is-phrases-mode .toolbar {
 
 .word-list-item strong,
 .word-list-item small {
-  display: block;
+  display: -webkit-box;
+  overflow: hidden;
   overflow-wrap: anywhere;
-  word-break: break-word;
+  word-break: normal;
+  -webkit-box-orient: vertical;
   line-height: 1.36;
 }
 
 .word-list-item strong {
+  -webkit-line-clamp: 2;
   font-size: 1rem;
 }
 
 .word-list-item small {
+  -webkit-line-clamp: 2;
   margin-top: 3px;
   color: var(--muted);
 }
 
 .word-list-item em {
-  flex: 0 0 auto;
   display: grid;
   place-items: center;
   margin-top: 2px;
@@ -623,19 +630,19 @@ body.is-phrases-mode .toolbar {
 
 body.is-grammar-mode .word-list-item,
 body.is-phrases-mode .word-list-item {
-  min-height: 72px;
-  padding: 13px 12px;
+  min-height: 92px;
+  padding: 14px 12px;
 }
 
 body.is-grammar-mode .word-list-item strong,
 body.is-phrases-mode .word-list-item strong {
-  font-size: 0.94rem;
-  line-height: 1.22;
+  font-size: 0.88rem;
+  line-height: 1.28;
 }
 
 body.is-grammar-mode .word-list-item small,
 body.is-phrases-mode .word-list-item small {
-  font-size: 0.86rem;
+  font-size: 0.8rem;
   line-height: 1.32;
 }
 
@@ -866,8 +873,7 @@ body.is-phrases-mode .word-list-item small {
 .primary-button:hover,
 .icon-button:hover,
 .review-button:hover,
-.text-button:hover,
-.word-list-item:hover {
+.text-button:hover {
   transform: translateY(-1px);
 }
 
