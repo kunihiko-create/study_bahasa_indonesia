@@ -570,10 +570,10 @@ body.is-phrases-mode .toolbar {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   min-height: 58px;
-  padding: 10px 12px;
+  padding: 12px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fff;
@@ -594,6 +594,7 @@ body.is-phrases-mode .toolbar {
 .word-list-item small {
   display: block;
   overflow-wrap: anywhere;
+  word-break: break-word;
   line-height: 1.36;
 }
 
@@ -610,6 +611,7 @@ body.is-phrases-mode .toolbar {
   flex: 0 0 auto;
   display: grid;
   place-items: center;
+  margin-top: 2px;
   width: 30px;
   height: 30px;
   border-radius: 999px;
@@ -617,6 +619,24 @@ body.is-phrases-mode .toolbar {
   color: var(--teal-dark);
   font-style: normal;
   font-weight: 900;
+}
+
+body.is-grammar-mode .word-list-item,
+body.is-phrases-mode .word-list-item {
+  min-height: 72px;
+  padding: 13px 12px;
+}
+
+body.is-grammar-mode .word-list-item strong,
+body.is-phrases-mode .word-list-item strong {
+  font-size: 0.94rem;
+  line-height: 1.22;
+}
+
+body.is-grammar-mode .word-list-item small,
+body.is-phrases-mode .word-list-item small {
+  font-size: 0.86rem;
+  line-height: 1.32;
 }
 
 .target-band,

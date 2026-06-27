@@ -527,11 +527,23 @@ function renderWordList() {
     }
 
     button.addEventListener("click", () => {
+      const listScrollTop = wordList.scrollTop;
+      const pageScrollX = window.scrollX || window.pageXOffset || 0;
+      const pageScrollY = window.scrollY || window.pageYOffset || 0;
       state.index = index;
       state.flipped = false;
-      render();
+      renderCard();
+      syncListSelection();
+      wordList.scrollTop = listScrollTop;
+      window.scrollTo(pageScrollX, pageScrollY);
     });
     wordList.appendChild(button);
+  });
+}
+
+function syncListSelection() {
+  Array.from(wordList.children).forEach((button, index) => {
+    button.classList.toggle("active", index === state.index);
   });
 }
 
