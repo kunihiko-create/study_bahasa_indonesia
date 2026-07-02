@@ -140,8 +140,8 @@ window.INDONESIAN_FLASHCARD_DATA = {
       english: "most",
       partOfSpeech: "副詞",
       category: "文法語",
-      example: "Mangga paling enak.",
-      exampleJapanese: "マンゴーが一番おいしいです。",
+      example: "Mangga ini paling enak.",
+      exampleJapanese: "このマンゴーが一番おいしいです。",
       note: "paling + 形容詞で最上級。"
     },
     {
@@ -969,9 +969,9 @@ window.INDONESIAN_FLASHCARD_DATA.words.push(
       english: "to open",
       partOfSpeech: "動詞",
       category: "日常",
-      example: "Tolong membuka jendela.",
+      example: "Tolong buka jendela.",
       exampleJapanese: "窓を開けてください。",
-      note: "buka に meN- が付いた形。"
+      note: "buka に meN- が付いた形。tolong の後は語幹 buka を使う。"
     },
     {
       id: "d-019",
@@ -1029,9 +1029,9 @@ window.INDONESIAN_FLASHCARD_DATA.words.push(
       english: "slow; late",
       partOfSpeech: "形容詞",
       category: "形容",
-      example: "Bus datang lambat hari ini.",
-      exampleJapanese: "今日はバスが遅れて来ました。",
-      note: "動きの遅さにも到着の遅れにも使える。"
+      example: "Bus itu berjalan lambat.",
+      exampleJapanese: "そのバスはゆっくり走ります。",
+      note: "動きの遅さは lambat、到着の遅れは terlambat を使う。"
     },
     {
       id: "d-024",
@@ -1067,7 +1067,7 @@ window.INDONESIAN_FLASHCARD_DATA.words.push(
       category: "ニュース",
       example: "Wilayah itu dinyatakan aman.",
       exampleJapanese: "その地域は安全だと宣言されました。",
-      note: "nyata ではなく nyata の派生ではなく、nyatakan の受動形。"
+      note: "menyatakan(述べる、宣言する)の受動形。語幹は nyata。"
     },
     {
       id: "c-015",
@@ -1078,7 +1078,7 @@ window.INDONESIAN_FLASHCARD_DATA.words.push(
       partOfSpeech: "名詞",
       category: "状態",
       example: "Tidak ada gangguan listrik hari ini.",
-      exampleJapanese: "今日は停電の支障はありません。",
+      exampleJapanese: "今日は電気の障害はありません。",
       note: "ganggu から派生した -an 名詞。"
     },
     {
@@ -1101,7 +1101,7 @@ window.INDONESIAN_FLASHCARD_DATA.words.push(
       english: "to cross",
       partOfSpeech: "動詞",
       category: "交通",
-      example: "Jangan menyeberang jalan di sini.",
+      example: "Jangan menyeberang di sini.",
       exampleJapanese: "ここで道を横断しないでください。",
       note: "seberang は向こう側。"
     },

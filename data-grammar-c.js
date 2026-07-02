@@ -115,7 +115,7 @@
         ["Dia ketinggalan kereta.", "彼は電車に乗り遅れました。"]
       ],
       practice: {
-        prompt: "「私は鍵を忘れて取り残されました」を作る。",
+        prompt: "「私は鍵を置き忘れました」を作る。",
         answer: "Saya ketinggalan kunci."
       }
     },
@@ -195,8 +195,8 @@
         ["Orang-orang berdatangan ke pasar.", "人々が市場へ次々にやって来ました。"]
       ],
       practice: {
-        prompt: "「学生たちは互いに助け合います」を作る。",
-        answer: "Para siswa saling membantu."
+        prompt: "「彼らはパーティーで知り合いました」を ber-an で作る。",
+        answer: "Mereka berkenalan di pesta."
       }
     },
     {

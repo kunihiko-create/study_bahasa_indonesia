@@ -547,8 +547,8 @@
         ["Dia bertanya kepada petugas.", "彼は係員に質問します。"]
       ],
       practice: {
-        prompt: "「私は母に電話します」を作る。",
-        answer: "Saya menelepon kepada ibu."
+        prompt: "「私は母に手紙を送ります」を作る。",
+        answer: "Saya mengirim surat kepada ibu."
       }
     },
     {

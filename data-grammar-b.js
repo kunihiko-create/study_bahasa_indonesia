@@ -16,7 +16,7 @@
       explanation: "B級では単に形を覚えるだけでなく、-kan と -i が文中で何を目的語にするかを読む必要がある。",
       examples: [
         ["Pemerintah menyalurkan bantuan kepada warga.", "政府は住民に支援物資を配給します。"],
-        ["Pemerintah menyaluri daerah itu dengan bantuan.", "政府はその地域に支援を行き渡らせます。"]
+        ["Pemerintah mengirimi warga bantuan.", "政府は住民に支援物資を送ります。"]
       ],
       practice: {
         prompt: "「会社は顧客に情報を提供します」を作る。",
@@ -26,16 +26,16 @@
     {
       id: "bg-002",
       level: "B",
-      title: "memper-kan",
-      pattern: "memper- + 語幹 + -kan",
+      title: "memper-",
+      pattern: "memper- + 形容詞 / 語幹",
       meaning: "より〜にする、〜を強化する",
-      explanation: "形容詞・状態語から変化を起こす他動詞を作る。政策・制度・改善の文脈でよく出る。",
+      explanation: "形容詞・状態語から変化を起こす他動詞を作る。政策・制度・改善の文脈でよく出る。memperkenalkan のように -kan を伴う形もある。",
       examples: [
         ["Pemerintah mempercepat pembangunan infrastruktur.", "政府はインフラ整備を加速させます。"],
         ["Program itu memperkuat ketahanan pangan.", "その計画は食料の強靭性を高めます。"]
       ],
       practice: {
-        prompt: "「その制度は透明性を高めます」を作る。",
+        prompt: "「その制度は透明性を強めます」を作る。",
         answer: "Sistem itu memperkuat transparansi."
       }
     },
@@ -579,8 +579,8 @@
         ["Permintaan naik. Akibatnya, harga ikut meningkat.", "需要が増えました。その結果、価格も上がりました。"]
       ],
       practice: {
-        prompt: "「その結果、交通が遅れました」を作る。",
-        answer: "Akibatnya, lalu lintas terlambat."
+        prompt: "「その結果、交通が滞りました」を作る。",
+        answer: "Akibatnya, lalu lintas terhambat."
       }
     },
     {

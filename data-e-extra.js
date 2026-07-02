@@ -46,7 +46,7 @@
     ["kalau", "もし〜なら", "if; when", "接続詞", "文法語", "custom", "Kalau hujan, saya di rumah.", "もし雨なら、私は家にいます。"],
     ["untuk", "〜のために、〜用の", "for; to", "前置詞", "文法語", "custom", "Ini hadiah untuk ibu.", "これは母へのプレゼントです。"],
     ["tentang", "〜について", "about", "前置詞", "文法語", "custom", "Kami berbicara tentang makanan.", "私たちは食べ物について話します。"],
-    ["dalam", "〜の中に", "inside; in", "前置詞", "文法語", "custom", "Buku ada dalam tas.", "本はかばんの中にあります。"],
+    ["dalam", "〜の中に", "inside; in", "前置詞", "文法語", "custom", "Buku ada di dalam tas.", "本はかばんの中にあります。"],
     ["luar", "外", "outside", "名詞", "場所", "custom", "Anak-anak bermain di luar.", "子どもたちは外で遊びます。"],
     ["atas", "上", "above; top", "名詞", "場所", "custom", "Buku ada di atas meja.", "本は机の上にあります。"],
     ["bawah", "下", "under; below", "名詞", "場所", "custom", "Sepatu ada di bawah kursi.", "靴は椅子の下にあります。"],
